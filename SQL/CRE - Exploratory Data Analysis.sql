@@ -1,6 +1,6 @@
 -- Colorado Real Estate Exploratory Data Analysis
 
--- Property type distirbution
+-- Property type distribution
 
 SELECT `type`, 
 		COUNT(*) AS listings
