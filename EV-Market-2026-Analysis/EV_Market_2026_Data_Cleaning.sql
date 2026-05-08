@@ -1,7 +1,6 @@
 -- EV MARKET 2026 PROJECT - DATA CLEANING
 
--- Make a new schema
--- Import Table
+-- Check imported table row count
 SELECT COUNT(*)
 FROM ev_market_2026;
 
@@ -9,7 +8,7 @@ FROM ev_market_2026;
 CREATE TABLE evmarket_staging
 LIKE ev_market_2026;
 
--- Insert data to staging table
+-- Insert data into staging table
 INSERT INTO evmarket_staging
 SELECT *
 FROM ev_market_2026;
@@ -20,7 +19,7 @@ FROM evmarket_staging;
 SELECT *
 FROM evmarket_staging;
 
--- Data Cleaning: Removing Duplicates
+-- Check for duplicate records
 -- Creating CTE with ROW_NUMBER
 WITH duplicate_cte AS (
 	SELECT *, 
@@ -34,13 +33,12 @@ WITH duplicate_cte AS (
 FROM evmarket_staging
 )
 SELECT *
-FROM duplicate_CTE
+FROM duplicate_cte
 WHERE row_num > 1;
 
 -- Result: No exact duplicate rows found, no deletion required
 
 -- Check for leading/trailing whitespace in text columns
--- != means not equal to
 SELECT *
 FROM evmarket_staging
 WHERE brand != TRIM(brand)
