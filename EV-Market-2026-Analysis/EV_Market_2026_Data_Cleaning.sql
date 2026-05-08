@@ -1,4 +1,5 @@
 -- EV MARKET 2026 PROJECT - DATA CLEANING
+
 -- Make a new schema
 -- Import Table
 SELECT COUNT(*)
