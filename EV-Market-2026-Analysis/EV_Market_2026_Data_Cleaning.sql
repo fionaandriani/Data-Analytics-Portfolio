@@ -13,10 +13,8 @@ INSERT INTO evmarket_staging
 SELECT *
 FROM ev_market_2026;
 
+-- Check staging table row count
 SELECT COUNT(*)
-FROM evmarket_staging;
-
-SELECT *
 FROM evmarket_staging;
 
 -- Check for duplicate records
@@ -30,7 +28,7 @@ WITH duplicate_cte AS (
 			autopilot_level, country_of_origin, market_segment, annual_sales_units, customer_rating, warranty_years
             ORDER BY brand
 		) AS row_num
-FROM evmarket_staging
+	FROM evmarket_staging
 )
 SELECT *
 FROM duplicate_cte
