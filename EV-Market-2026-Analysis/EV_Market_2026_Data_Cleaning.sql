@@ -21,7 +21,7 @@ FROM evmarket_staging;
 -- Creating CTE with ROW_NUMBER
 WITH duplicate_cte AS (
 	SELECT *, 
-		ROW_NUMBER () OVER (
+		ROW_NUMBER() OVER (
 			PARTITION BY
 			brand, model, `year`, variant, price_usd, battery_capacity_kwh, range_miles, charging_speed_kw, acceleration_0_60_mph,
 			top_speed_mph, horsepower, torque_nm, drive_type, seating_capacity, body_type, cargo_volume_cubic_ft, weight_kg, safety_rating,
@@ -34,7 +34,7 @@ SELECT *
 FROM duplicate_cte
 WHERE row_num > 1;
 
--- Result: No exact duplicate rows found, no deletion required
+-- Result: No duplicate records found
 
 -- Check for leading/trailing whitespace in text columns
 SELECT *
