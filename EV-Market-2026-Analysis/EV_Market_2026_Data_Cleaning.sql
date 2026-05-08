@@ -10,7 +10,7 @@ CREATE TABLE evmarket_staging
 LIKE ev_market_2026;
 
 -- Insert data to staging table
-INSERT evmarket_staging
+INSERT INTO evmarket_staging
 SELECT *
 FROM ev_market_2026;
 
