@@ -1,7 +1,7 @@
 # EV Market 2026 Analysis
 
 ## Overview
-This project explores trends in the electric vehicle (EV) market using SQL and Tableau. The goal is to understand how factors like pricing, performance, and driving range relate to EV sales and consumer demand.
+This project explores trends in the electric vehicle (EV) market using SQL and Tableau. The goal is to understand how pricing, performance, and driving range relate to EV sales and consumer demand.
 
 ## Objective
 To analyze EV market data and identify patterns in:
@@ -52,6 +52,8 @@ This interactive Tableau dashboard visualizes:
 ### Dashboard Preview
 
 ![EV Market Dashboard](EV_Market_Dashboard_Preview.png)
+
+[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/fiona.putri1369/viz/EV_MARKET_2026_Dashboard/EVMarketAnalysisDashboard?publish=yes)
 
 [Download Tableau Workbook](EV_MARKET_2026_Dashboard.twbx)
 
