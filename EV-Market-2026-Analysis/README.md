@@ -53,6 +53,8 @@ This interactive Tableau dashboard visualizes:
 
 ![EV Market Dashboard](EV_Market_Dashboard_Preview.png)
 
+[Download Tableau Workbook](EV_MARKET_2026_Dashboard.twbx)
+
 ## Project Structure
 
 ```text
